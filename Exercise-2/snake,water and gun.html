@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake,water and gun</title>
+</head>
+
+<body>
+    <script>
+        let randomWord_generator = () => {
+            let A = ['S', 'W', 'G']
+            return A[Math.trunc(Math.random() * 3)]
+        }
+        let str = randomWord_generator()
+        console.log(str)
+
+        let word = prompt('choose b/w snake,water and Gun')
+        if (word == 'S' && str == 'W') { alert('you wins') }
+        else if (word == 'S' && str == 'G') { alert('computer wins') }
+        else if (word == 'W' && str == 'G') { alert('you wins') }
+        else if (word == 'W' && str == 'S') { alert('computer wins') }
+        else if (word =='G' && str == 'S') { alert('you wins') }
+        else if (word == 'G' && str == 'W') { alert('computer wins') }
+        else alert('no body wins')
+        setTimeout(()=>{
+            window.location.reload()
+            console.clear()
+        },2000)
+       
+    </script>
+</body>
+
+</html>
