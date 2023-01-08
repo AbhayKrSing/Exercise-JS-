@@ -3,4 +3,5 @@
 .Onparagraph{
     @apply text-5xl sm:text-7xl md:text-8xl lg:text-9xl
 }
+
 @tailwind utilities;
